@@ -1214,10 +1214,18 @@ input, select, textarea {
 
 .two-cols {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 colonnes */
-    gap: 4px 20px; /* espace entre lignes et colonnes */
-    padding-left: 20px; /* pour conserver l’indentation */
+    grid-template-columns: 1fr; /* par défaut : 1 colonne (mobile) */
+    gap: 4px 20px;
+    padding-left: 20px;
 }
+
+/* À partir de 768px (tablettes + grands écrans) → 2 colonnes */
+@media (min-width: 768px) {
+    .two-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 
 
 
