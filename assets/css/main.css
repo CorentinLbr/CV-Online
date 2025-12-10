@@ -1212,6 +1212,14 @@ input, select, textarea {
     opacity: 0.75;
 }
 
+.two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 4px 20px; /* espace entre lignes et colonnes */
+    padding-left: 20px; /* pour conserver l’indentation */
+}
+
+
 
 /* ********************************* */
 
