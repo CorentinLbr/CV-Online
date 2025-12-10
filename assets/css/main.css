@@ -189,11 +189,8 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			font-family: "Inter";
 			border-bottom: solid 1px #ffffff;
-			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
-			white-space: pre-wrap;
+			padding-bottom: 0.25rem;
 			
 		}
 
@@ -204,9 +201,9 @@ input, select, textarea {
 	}
 
 	h2 {
+		color: #ffffff;
 		font-size: 1.5rem;
 		line-height: 1.4;
-		letter-spacing: 0.5rem;
 	}
 
 	h3 {
@@ -1127,7 +1124,7 @@ input, select, textarea {
 .titre-cv {
     font-weight: bold;
     font-size: 1.3rem;
-	color:#6bade2;
+	color:#71c775;
     margin-bottom: 0.3rem;
 }
 
@@ -1153,7 +1150,7 @@ input, select, textarea {
 .exp-date {
     display: block;
     font-weight: 600;
-    color: #5d926c;  /* Vert lumineux */
+    color: #aac0ee;  /* Vert lumineux */
     margin-bottom: 10px;
 }
 
