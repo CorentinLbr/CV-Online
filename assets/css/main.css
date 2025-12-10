@@ -1220,7 +1220,7 @@ input, select, textarea {
 }
 
 /* À partir de 768px (tablettes + grands écrans) → 2 colonnes */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .two-cols {
         grid-template-columns: 1fr 1fr;
     }
