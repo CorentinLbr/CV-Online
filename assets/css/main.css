@@ -1102,7 +1102,7 @@ input, select, textarea {
 				position: absolute;
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - 1px);
-				width: 1px;
+				width: 2px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
 			}
@@ -1119,6 +1119,7 @@ input, select, textarea {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
+			background-color: #eed5ed50;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}
@@ -1207,7 +1208,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			left: calc(50% - 1px);
-			width: 1px;
+			width: 0px;
 			height: 100%;
 			background: #ffffff;
 		}
@@ -1540,6 +1541,14 @@ input, select, textarea {
     margin-bottom: 0;      /* enlève l'espace sous le paragraphe */
 }
 
+.icon-cv {
+    font-weight: bold;
+    font-size: 2em;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+
 
 
 /************ SECTION CONTACT **************/
@@ -1577,7 +1586,7 @@ input, select, textarea {
 .contact-classic .icon {
     width: 22px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     opacity: 0.75;
 }
 
