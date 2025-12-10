@@ -928,181 +928,7 @@ input, select, textarea {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 
-/* Table */
 
-	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
-	}
-
-	table {
-		margin: 0 0 2rem 0;
-		width: 100%;
-	}
-
-		table tbody tr {
-			border: solid 1px #ffffff;
-			border-left: 0;
-			border-right: 0;
-		}
-
-			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.075);
-			}
-
-		table td {
-			padding: 0.75em 0.75em;
-		}
-
-		table th {
-			color: #ffffff;
-			font-size: 0.9em;
-			font-weight: 600;
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
-		}
-
-		table thead {
-			border-bottom: solid 2px #ffffff;
-		}
-
-		table tfoot {
-			border-top: solid 2px #ffffff;
-		}
-
-		table.alt {
-			border-collapse: separate;
-		}
-
-			table.alt tbody tr td {
-				border: solid 1px #ffffff;
-				border-left-width: 0;
-				border-top-width: 0;
-			}
-
-				table.alt tbody tr td:first-child {
-					border-left-width: 1px;
-				}
-
-			table.alt tbody tr:first-child td {
-				border-top-width: 1px;
-			}
-
-			table.alt thead {
-				border-bottom: 0;
-			}
-
-			table.alt tfoot {
-				border-top: 0;
-			}
-
-/* Button */
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: transparent;
-		border-radius: 4px;
-		border: 0;
-		box-shadow: inset 0 0 0 1px #ffffff;
-		color: #ffffff !important;
-		cursor: pointer;
-		display: inline-block;
-		font-size: 0.8rem;
-		font-weight: 300;
-		height: 2.75rem;
-		letter-spacing: 0.2rem;
-		line-height: 2.75rem;
-		outline: 0;
-		padding: 0 1.25rem 0 1.35rem;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		white-space: nowrap;
-	}
-
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		input[type="button"]:hover,
-		button:hover,
-		.button:hover {
-			background-color: rgba(255, 255, 255, 0.075);
-		}
-
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		input[type="button"]:active,
-		button:active,
-		.button:active {
-			background-color: rgba(255, 255, 255, 0.175);
-		}
-
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		input[type="button"].icon:before,
-		button.icon:before,
-		.button.icon:before {
-			margin-right: 0.5em;
-		}
-
-		input[type="submit"].fit,
-		input[type="reset"].fit,
-		input[type="button"].fit,
-		button.fit,
-		.button.fit {
-			width: 100%;
-		}
-
-		input[type="submit"].small,
-		input[type="reset"].small,
-		input[type="button"].small,
-		button.small,
-		.button.small {
-			font-size: 0.6rem;
-			height: 2.0625rem;
-			line-height: 2.0625rem;
-		}
-
-		input[type="submit"].primary,
-		input[type="reset"].primary,
-		input[type="button"].primary,
-		button.primary,
-		.button.primary {
-			background-color: #ffffff;
-			color: #1b1f22 !important;
-			font-weight: 600;
-		}
-
-		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
-		input[type="button"].disabled,
-		input[type="button"]:disabled,
-		button.disabled,
-		button:disabled,
-		.button.disabled,
-		.button:disabled {
-			pointer-events: none;
-			cursor: default;
-			opacity: 0.25;
-		}
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button {
-		line-height: calc(2.75rem - 2px);
-	}
 
 /* BG */
 
@@ -1111,7 +937,6 @@ input, select, textarea {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
-		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1140,9 +965,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1621,6 +1449,143 @@ input, select, textarea {
 		}
 
 /* Footer */
+
+.profil-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.profil-photo img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.profil-texte {
+    flex: 1;
+    font-size: 1.05em;
+    line-height: 1.6;
+    text-align: justify;   /* <-- Ajout pour justification */
+}
+
+
+/* Responsive mobile */
+@media (max-width: 700px) {
+    .profil-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil-texte {
+        text-align: left;
+    }
+}
+
+.exp-card {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc; /* Trait entre expériences */
+}
+
+
+.exp-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.exp-date {
+    font-size: 1rem;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.titre-cv {
+    font-weight: bold;
+    font-size: 1.3rem;
+	color:#6bade2;
+    margin-bottom: 0.3rem;
+}
+
+.lieu-cv {
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+.exp-card ul {
+    margin-top: .5rem;
+    padding-left: 2rem;
+}
+
+.exp-card li {
+    margin-bottom: 1px;
+    text-align: justify;
+}
+
+.exp-card h3 {
+    margin-bottom: 0px;
+}
+
+.exp-date {
+    display: block;
+    font-weight: 600;
+    color: #5d926c;  /* Vert lumineux */
+    margin-bottom: 10px;
+}
+
+.exp-card p {
+    margin-bottom: 0;      /* enlève l'espace sous le paragraphe */
+}
+
+
+
+/************ SECTION CONTACT **************/
+
+#Contact {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Titre */
+#Contact .major {
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.4rem;
+}
+
+/* Bloc contact classique */
+.contact-classic {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+/* Chaque ligne */
+.contact-classic .line {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.05rem;
+}
+
+/* Icônes sobres */
+.contact-classic .icon {
+    width: 22px;
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.75;
+}
+
+
+/* ********************************* */
+
+
+
 
 	#footer {
 		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
