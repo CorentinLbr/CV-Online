@@ -1067,6 +1067,7 @@ input, select, textarea {
 }
 
 .exp-text {
+    text-align: justify;   /* <-- Ajout pour justification */
     flex: 1;
 }
 
@@ -1077,10 +1078,11 @@ input, select, textarea {
 }
 
 .PP img {
+	margin-left: 20px; /* espace à gauche */
     width: 100px;
     height: 120px;
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: 40%;
     box-shadow: 0 0 12px rgba(0,0,0,0.5);
 }
 
