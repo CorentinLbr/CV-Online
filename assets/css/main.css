@@ -106,33 +106,17 @@ input, select, textarea {
 
 /* Type */
 
-	html {
-		font-size: 16pt;
-	}
+	html {font-size: 16pt;}
 
 		@media screen and (max-width: 1680px) {
-
-			html {
-				font-size: 12pt;
-			}
-
-		}
+			html {font-size: 12pt;}		}
 
 		@media screen and (max-width: 736px) {
-
-			html {
-				font-size: 11pt;
-			}
-
-		}
+			html {font-size: 11pt;}		}
 
 		@media screen and (max-width: 360px) {
+			html {font-size: 10pt;}		}
 
-			html {
-				font-size: 10pt;
-			}
-
-		}
 
 	body, input, select, textarea {
 		color: #ffffff;
@@ -203,17 +187,7 @@ input, select, textarea {
 		font-size: 1rem;
 	}
 
-	h4 {
-		font-size: 0.8rem;
-	}
 
-	h5 {
-		font-size: 0.7rem;
-	}
-
-	h6 {
-		font-size: 0.6rem;
-	}
 
 	@media screen and (max-width: 736px) {
 
@@ -291,45 +265,6 @@ input, select, textarea {
 
 
 
-/* Icon */
-
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon:before {
-			line-height: inherit;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
-
-
-
 /* List */
 
 	ol {
@@ -381,166 +316,9 @@ input, select, textarea {
 			margin-left: 2rem;
 		}
 
-/* Actions */
-
-	ul.actions {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		cursor: default;
-		list-style: none;
-		margin-left: -1rem;
-		padding-left: 0;
-	}
-
-		ul.actions li {
-			padding: 0 0 0 1rem;
-			vertical-align: middle;
-		}
-
-		ul.actions.special {
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
-			width: 100%;
-			margin-left: 0;
-		}
-
-			ul.actions.special li:first-child {
-				padding-left: 0;
-			}
-
-		ul.actions.stacked {
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			margin-left: 0;
-		}
-
-			ul.actions.stacked li {
-				padding: 1.3rem 0 0 0;
-			}
-
-				ul.actions.stacked li:first-child {
-					padding-top: 0;
-				}
-
-		ul.actions.fit {
-			width: calc(100% + 1rem);
-		}
-
-			ul.actions.fit li {
-				-moz-flex-grow: 1;
-				-webkit-flex-grow: 1;
-				-ms-flex-grow: 1;
-				flex-grow: 1;
-				-moz-flex-shrink: 1;
-				-webkit-flex-shrink: 1;
-				-ms-flex-shrink: 1;
-				flex-shrink: 1;
-				width: 100%;
-			}
-
-				ul.actions.fit li > * {
-					width: 100%;
-				}
-
-			ul.actions.fit.stacked {
-				width: 100%;
-			}
-
-		@media screen and (max-width: 480px) {
-
-			ul.actions:not(.fixed) {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				margin-left: 0;
-				width: 100% !important;
-			}
-
-				ul.actions:not(.fixed) li {
-					-moz-flex-grow: 1;
-					-webkit-flex-grow: 1;
-					-ms-flex-grow: 1;
-					flex-grow: 1;
-					-moz-flex-shrink: 1;
-					-webkit-flex-shrink: 1;
-					-ms-flex-shrink: 1;
-					flex-shrink: 1;
-					padding: 1rem 0 0 0;
-					text-align: center;
-					width: 100%;
-				}
-
-					ul.actions:not(.fixed) li > * {
-						width: 100%;
-					}
-
-					ul.actions:not(.fixed) li:first-child {
-						padding-top: 0;
-					}
-
-					ul.actions:not(.fixed) li input[type="submit"],
-					ul.actions:not(.fixed) li input[type="reset"],
-					ul.actions:not(.fixed) li input[type="button"],
-					ul.actions:not(.fixed) li button,
-					ul.actions:not(.fixed) li .button {
-						width: 100%;
-					}
-
-						ul.actions:not(.fixed) li input[type="submit"].icon:before,
-						ul.actions:not(.fixed) li input[type="reset"].icon:before,
-						ul.actions:not(.fixed) li input[type="button"].icon:before,
-						ul.actions:not(.fixed) li button.icon:before,
-						ul.actions:not(.fixed) li .button.icon:before {
-							margin-left: -0.5em;
-						}
-
-		}
-
-/* Icons */
-
-	ul.icons {
-		cursor: default;
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.icons li {
-			display: inline-block;
-			padding: 0 0.75em 0 0;
-		}
-
-			ul.icons li:last-child {
-				padding-right: 0;
-			}
-
-			ul.icons li a {
-				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
-				display: inline-block;
-				height: 2.25rem;
-				line-height: 2.25rem;
-				text-align: center;
-				width: 2.25rem;
-			}
-
-				ul.icons li a:hover {
-					background-color: rgba(255, 255, 255, 0.075);
-				}
-
-				ul.icons li a:active {
-					background-color: rgba(255, 255, 255, 0.175);
-				}
 
 
-
-/* BG */
+/*********************** Fond application **********************/
 
 	#bg {
 		-moz-transform: scale(1.0);
@@ -615,7 +393,8 @@ input, select, textarea {
 			background-color: #000000;
 		}
 
-/* Wrapper */
+
+/****************** Wrapper **********************/
 
 	#wrapper {
 		display: -moz-flex;
@@ -670,7 +449,7 @@ input, select, textarea {
 
 		}
 
-/* Header */
+/************** Header ******************/
 
 	#header {
 		display: -moz-flex;
@@ -1088,7 +867,6 @@ input, select, textarea {
 
 
 /*******Bouton Navigation********/
-/* Wrapper neutre autour du titre */
 .major-wrapper {
     position: relative;
 }
@@ -1127,11 +905,12 @@ input, select, textarea {
         display: none;
     }
 }
+/**************************/
 
 
 
 
-/* Footer */
+
 
 .profil-container {
     display: flex;
@@ -1292,8 +1071,6 @@ input, select, textarea {
 
 
 /* ********************************* */
-
-
 
 
 	#footer {
