@@ -854,6 +854,7 @@ input, select, textarea {
     width: 80px;
     height: auto;
     object-fit: contain;
+	margin-left: 10px; 
 }
 
 .PP img {
@@ -910,8 +911,6 @@ input, select, textarea {
 
 
 
-
-
 .profil-container {
     display: flex;
     align-items: center;
@@ -947,12 +946,6 @@ input, select, textarea {
     }
 }
 
-.exp-card {
-    padding: 1rem 0;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ccc; /* Trait entre expériences */
-}
-
 
 .exp-header h3 {
     margin: 0;
@@ -969,14 +962,22 @@ input, select, textarea {
     font-weight: bold;
     font-size: 1.3rem;
 	color:#71c775;
-    margin-bottom: 0.3rem;
+    text-align: left;
 }
 
 .lieu-cv {
     font-style: italic;
     color: #ffffff;
-    margin-bottom: 0.2rem;
 }
+
+
+/******* integration logo ********/
+.exp-card {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc; /* Trait entre expériences */
+}
+
 .exp-card ul {
     margin-top: .5rem;
     padding-left: 2rem;
@@ -991,6 +992,11 @@ input, select, textarea {
     margin-bottom: 0px;
 }
 
+.exp-card p {
+    margin-bottom: 0;      /* enlève l'espace sous le paragraphe */
+}
+
+
 .exp-date {
     display: block;
     font-weight: 600;
@@ -998,9 +1004,6 @@ input, select, textarea {
     margin-bottom: 10px;
 }
 
-.exp-card p {
-    margin-bottom: 0;      /* enlève l'espace sous le paragraphe */
-}
 
 .icon-cv {
     font-weight: bold;
