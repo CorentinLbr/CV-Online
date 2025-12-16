@@ -385,6 +385,65 @@
 
 			}
 
+		//----------- SWPIE Tel ----------------------------------------
+		
+		const sections = [
+			"Contact",
+			"Profil",
+			"Experiences",
+			"Competences",
+			"Formations"
+		];
+
+		let touchStartX = 0;
+		let touchStartY = 0;
+		let touchEndX = 0;
+		let touchEndY = 0;
+
+		const swipeThreshold = 50; // distance minimale du swipe
+
+		function getCurrentIndex() {
+			const hash = window.location.hash.replace("#", "");
+			return sections.indexOf(hash);
+		}
+
+		document.addEventListener("touchstart", (e) => {
+			if (e.touches.length !== 1) return;
+
+			touchStartX = e.touches[0].clientX;
+			touchStartY = e.touches[0].clientY;
+		}, { passive: true });
+		
+
+		document.addEventListener("touchend", (e) => {
+			touchEndX = e.changedTouches[0].clientX;
+			touchEndY = e.changedTouches[0].clientY;
+
+			const deltaX = touchEndX - touchStartX;
+			const deltaY = touchEndY - touchStartY;
+
+			// Ignore si le swipe est surtout vertical
+			if (Math.abs(deltaX) < swipeThreshold || Math.abs(deltaX) < Math.abs(deltaY)) {
+				return;
+			}
+
+			const index = getCurrentIndex();
+			if (index === -1) return;
+
+			// Swipe droite → section précédente
+			if (deltaX > 0 && index > 0) {
+				window.location.hash = sections[index - 1];
+			}
+
+			// Swipe gauche → section suivante
+			if (deltaX < 0 && index < sections.length - 1) {
+				window.location.hash = sections[index + 1];
+			}
+		}, { passive: true });
+
+
+
+
 			
 
 		// Initialize.
