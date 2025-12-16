@@ -1087,6 +1087,49 @@ input, select, textarea {
 }
 
 
+/*******Bouton Navigation********/
+/* Wrapper neutre autour du titre */
+.major-wrapper {
+    position: relative;
+}
+
+/* Flèches alignées à droite du titre */
+.section-arrows {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 8px;
+}
+
+/* Style sobre */
+.section-arrows .arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.section-arrows .arrow:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.8);
+}
+
+@media (max-width: 736px) {
+    .section-arrows {
+        display: none;
+    }
+}
+
+
+
 
 /* Footer */
 
