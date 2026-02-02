@@ -975,8 +975,9 @@ em a:hover {
     text-align: left;
 }
 
-.explication_Competences {
-	color:#c2c2c2cb;
+
+.exp-card ul li i {
+  color: #bbbbbbcb; 
 }
 
 
@@ -1031,11 +1032,6 @@ em a:hover {
     border-radius: 4px;
     display: inline-block;
 }
-
-
-
-
-
 
 
 
