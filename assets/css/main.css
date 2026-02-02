@@ -184,7 +184,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 
 
@@ -836,6 +836,16 @@ input, select, textarea {
 
 		}
 
+em a {
+    text-decoration: none;
+    border-bottom: none;
+
+    color: #dcebff; 
+}
+
+em a:hover {
+    text-decoration: underline;
+}
 
 /******* Texte avec logo*******/	
 
@@ -949,7 +959,7 @@ input, select, textarea {
 
 .exp-header h3 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .exp-date {
@@ -996,6 +1006,11 @@ input, select, textarea {
     margin-bottom: 0;      /* enlève l'espace sous le paragraphe */
 }
 
+.exp-logo a {
+	text-decoration: none;
+    border-bottom: none;
+}
+
 
 .exp-date {
     display: block;
@@ -1011,6 +1026,8 @@ input, select, textarea {
     border-radius: 4px;
     display: inline-block;
 }
+
+
 
 
 
