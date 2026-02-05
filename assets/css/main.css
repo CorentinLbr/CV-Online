@@ -537,10 +537,8 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
-				font-family :'Courier New';
-				
+				letter-spacing: 1.9px;	
 			}
-
 			
 
 				#header .content .inner > :last-child {
