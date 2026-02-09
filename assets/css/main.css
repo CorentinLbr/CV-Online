@@ -769,17 +769,27 @@ input, select, textarea {
 			}
 
 			#main article .close {
-				display: block;
 				position: absolute;
-				top: 0;
-				right: 0;
-				width: 4rem;
-				height: 4rem;
+				top: 1rem;
+				right: 1rem;
+
+				width: auto;
+				height: auto;
+				padding: 0.25rem 0.5rem;
+		
+				border: 1px solid #ffffff;
+				border-radius: 10px;
+
+				color: #ffffff;
+				font-size: 0.7rem;
+				text-decoration: none;
 				cursor: pointer;
-				text-indent: 4rem;
-				overflow: hidden;
-				white-space: nowrap;
-			}
+
+				text-indent: 0;        /* IMPORTANT : on annule le masquage */
+				overflow: visible;
+				white-space: normal;
+
+}
 
 				#main article .close:before {
 					-moz-transition: background-color 0.2s ease-in-out;
@@ -798,14 +808,14 @@ input, select, textarea {
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
 				}
-
-				#main article .close:hover:before {
-					background-color: rgba(255, 255, 255, 0.075);
+				
+				#main article .close:hover {
+					background-color: rgba(255, 255, 255, 0.25);
+					transform: scale(1.05);
 				}
 
-				#main article .close:active:before {
-					background-color: rgba(255, 255, 255, 0.175);
-				}
+
+				
 
 		@media screen and (max-width: 736px) {
 

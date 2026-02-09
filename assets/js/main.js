@@ -385,7 +385,7 @@
 
 			}
 
-		//----------- SWPIE Tel ----------------------------------------
+		//----------- SWIPE Tel ----------------------------------------
 		
 		const sections = [
 			"Contact",
@@ -430,15 +430,18 @@
 			const index = getCurrentIndex();
 			if (index === -1) return;
 
-			// Swipe droite → section précédente
-			if (deltaX > 0 && index > 0) {
-				window.location.hash = sections[index - 1];
+			// Swipe droite → section précédente (circulaire)
+			if (deltaX > 0) {
+				const prevIndex = (index - 1 + sections.length) % sections.length;
+				window.location.hash = sections[prevIndex];
 			}
 
-			// Swipe gauche → section suivante
-			if (deltaX < 0 && index < sections.length - 1) {
-				window.location.hash = sections[index + 1];
+			// Swipe gauche → section suivante (circulaire)
+			if (deltaX < 0) {
+				const nextIndex = (index + 1) % sections.length;
+				window.location.hash = sections[nextIndex];
 			}
+
 		}, { passive: true });
 
 
